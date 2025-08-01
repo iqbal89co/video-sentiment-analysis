@@ -1,0 +1,7 @@
+dataset/
+.venv/
+*/__pycache__/
+
+MELD.Raw.tar.gz
+
+training/runs/
