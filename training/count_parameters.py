@@ -1,4 +1,4 @@
-from models import MultimodalSentimentModel
+from training.models import MultimodalSentimentModel
 
 def count_parameters(model):
     params_dict = {

@@ -5,3 +5,9 @@ dataset/
 MELD.Raw.tar.gz
 
 training/runs/
+
+artifacts/
+__pycache__/
+
+MELD.Raw/
+train_splits/

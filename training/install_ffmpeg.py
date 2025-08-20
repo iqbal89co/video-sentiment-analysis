@@ -55,3 +55,6 @@ def install_ffmpeg():
     except (subprocess.CalledProcessError, FileNotFoundError) as e:
         print(f"FFMPEG installation Verification failed: {str(e)}")
         return False
+
+if __name__ == '__main__':
+    install_ffmpeg()

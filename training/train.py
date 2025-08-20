@@ -6,10 +6,10 @@ from tqdm import tqdm
 import json
 import sys
 
-from meld_dataset import prepare_dataloaders
-from models import MultimodalSentimentModel
-from install_ffmpeg import install_ffmpeg
-from models import MultimodalTrainer
+from training.meld_dataset import prepare_dataloaders
+from training.models import MultimodalSentimentModel
+from training.install_ffmpeg_win import install_ffmpeg
+from training.models import MultimodalTrainer
 
 # AWS SageMaker
 SM_MODEL_DIR = os.environ.get('SM_MODEL_DIR', '.')
