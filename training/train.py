@@ -46,7 +46,7 @@ def main():
     print(str(torchaudio.list_audio_backends()))
 
     args = parse_args()
-    device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+    device = torch.device('cuda:1' if torch.cuda.is_available() else 'cpu')
 
     # Track initial GPU memory if available
     if torch.cuda.is_available():
