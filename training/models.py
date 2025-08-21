@@ -211,7 +211,7 @@ class MultimodalTrainer:
         print(f"Batches per epoch: {len(train_loader):,}")
 
         timestamp = datetime.now().strftime('%b%d_%H-%M-%S') # e.g. Jul29_09-34-19
-        base_dir = '/opt/ml/output/tensorboard' if 'SM_MODEL_DIR' in os.environ else 'runs'
+        base_dir = 'output/tensorboard' if 'SM_MODEL_DIR' in os.environ else 'runs'
         log_dir = f"{base_dir}/run_{timestamp}"
         self.writer = SummaryWriter(log_dir=log_dir)
         self.global_step = 0

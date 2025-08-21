@@ -14,11 +14,11 @@ from training.models import MultimodalTrainer
 # AWS SageMaker
 SM_MODEL_DIR = os.environ.get('SM_MODEL_DIR', '.')
 SM_CHANNEL_TRAINING = os.environ.get(
-    'SM_CHANNEL_TRAINING', '/opt/ml/input/data/training')
+    'SM_CHANNEL_TRAINING', 'dataset/train')
 SM_CHANNEL_VALIDATION = os.environ.get(
-    'SM_CHANNEL_VALIDATION', '/opt/ml/input/data/validation')
+    'SM_CHANNEL_VALIDATION', 'dataset/dev')
 SM_CHANNEL_TEST = os.environ.get(
-    'SM_CHANNEL_TEST', '/opt/ml/input/data/test')
+    'SM_CHANNEL_TEST', 'dataset/test')
 
 os.environ['PYTORCH_CUDA_ALLOC_CONF'] = 'expandable_segments:True'
 
